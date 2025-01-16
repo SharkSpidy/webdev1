@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive p5.js Visual Experience</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #111;
+        }
+        #controls {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+        }
+        button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="controls">
+        <label for="speed">Speed:</label>
+        <input type="range" id="speed" min="1" max="10" value="5"><br>
+        <label for="size">Size:</label>
+        <input type="range" id="size" min="1" max="10" value="5"><br>
+        <label for="color">Color:</label>
+        <input type="color" id="color" value="#ffffff"><br>
+        <button id="saveBtn">Save Image</button>
+        <button id="clearBtn">Clear Canvas</button>
+    </div>
+    <script src="sketch.js"></script>
+</body>
+</html>
